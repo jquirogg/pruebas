@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.192s</div>
+<div class="counter">6.578s</div>
 <p>duration</p>
 </div>
 </td>
@@ -73,18 +73,19 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="navigateToGoogle()"></a>
-<h3 class="failures">navigateToGoogle()</h3>
+<a name="workWithSelects()"></a>
+<h3 class="failures">workWithSelects()</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[name='login:j_idt23']&quot;}
-  (Session info: chrome=127.0.6533.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+<pre>org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: chrome=127.0.6533.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'JEQUIROGAML-196', ip: '10.20.9.200', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\JEQUIR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5ef5706aa87cd1dbb320ebaa12e4fdaa
-*** Element info: {Using=css selector, value=button[name='login:j_idt23']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\JEQUIR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f568db9377ac0cb403e70c5918160c9
+*** Element info: {Using=css selector, value=input#frmCrear:nombreCrear}
 	at java.base@11.0.21/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base@11.0.21/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base@11.0.21/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -98,8 +99,7 @@ Session ID: 5ef5706aa87cd1dbb320ebaa12e4fdaa
 	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
 	at app//org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
 	at app//org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at app//NavigationTest.navigateToGoogle(NavigationTest.java:26)
+	at app//NavigationTest.workWithSelects(NavigationTest.java:67)
 	at java.base@11.0.21/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.21/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.21/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -199,8 +199,8 @@ Session ID: 5ef5706aa87cd1dbb320ebaa12e4fdaa
 </tr>
 </thead>
 <tr>
-<td class="failures">navigateToGoogle()</td>
-<td class="failures">2.192s</td>
+<td class="failures">workWithSelects()</td>
+<td class="failures">6.578s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -208,11 +208,11 @@ Session ID: 5ef5706aa87cd1dbb320ebaa12e4fdaa
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}) on port 29917
+<pre>Starting ChromeDriver 127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}) on port 8351
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-ago. 01, 2024 4:47:59 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+ago. 05, 2024 10:41:45 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -225,7 +225,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.4</a> at 1/08/2024, 4:48:01 p. m.</p>
+<a href="http://www.gradle.org">Gradle 8.4</a> at 5/08/2024, 10:41:51 a. m.</p>
 </div>
 </div>
 </body>
